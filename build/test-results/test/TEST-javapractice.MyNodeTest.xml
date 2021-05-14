@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="javapractice.MyNodeTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-05-14T14:10:07" hostname="DESKTOP-N6M0MS9" time="0.07">
-  <properties/>
-  <testcase name="given3NumbersWhenLinkedShouldPassedListTest()" classname="javapractice.MyNodeTest" time="0.07"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>

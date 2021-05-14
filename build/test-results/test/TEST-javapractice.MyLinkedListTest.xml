@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="javapractice.MyLinkedListTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-05-14T17:27:25" hostname="DESKTOP-N6M0MS9" time="0.047">
+  <properties/>
+  <testcase name="given3NumbersWhenAddedToLinkedShouldAddedToTop()" classname="javapractice.MyLinkedListTest" time="0.047"/>
+  <system-out><![CDATA[My Nodes: 56->30->70
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
