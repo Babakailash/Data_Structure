@@ -1,6 +1,6 @@
-javapractice/MyLinkedList.java
- javapractice.MyLinkedList
-javapractice/INode.java
- javapractice.INode
 javapractice/MyNode.java
  javapractice.MyNode
+javapractice/INode.java
+ javapractice.INode
+javapractice/MyLinkedList.java
+ javapractice.MyLinkedList
