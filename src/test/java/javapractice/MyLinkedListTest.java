@@ -5,20 +5,20 @@ import org.junit.jupiter.api.Test;
 
 public class MyLinkedListTest {
     @Test
-    public void given3NumbersWhenSearchingAmongThemShouldPassLinkedListResult(){
+    public void given3NumbersWhenInsertingAfterPassLinkedListResult(){
          MyNode<Integer> myFirstNode = new MyNode<Integer>(56);
          MyNode<Integer> mySecondNode = new MyNode<Integer>(30);
-         MyNode<Integer> myThirdNode = new MyNode<Integer>(70);
-        MyNode<Integer> myFourthNode = new MyNode<Integer>(88);
+         MyNode<Integer> myThirdNode = new MyNode<Integer>(40);
+         MyNode<Integer> myFourthNode = new MyNode<Integer>(70);
          MyLinkedList myLinkedList = new MyLinkedList();
-         myLinkedList.add(myFirstNode);
-         myLinkedList.append(myThirdNode);
-         myLinkedList.insert(myFirstNode,mySecondNode);
-         //myLinkedList.pop(myFirstNode);
-        // myLinkedList.popLast(myThirdNode);
-         myLinkedList.search(mySecondNode);
+         myLinkedList.append(myFirstNode);
+         myLinkedList.append(mySecondNode);
+         myLinkedList.append(myFourthNode);
+         myLinkedList.insertAfter(mySecondNode,myThirdNode);
+
          myLinkedList.printMyNode();
-         boolean result = myLinkedList.search(mySecondNode);
+         boolean result = myLinkedList.head.equals(myFirstNode) &&
+                          myLinkedList.tail.equals(myFourthNode);
          Assertions.assertTrue(result);
     }
 
