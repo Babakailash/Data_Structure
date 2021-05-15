@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Test;
 
 public class MyLinkedListTest {
     @Test
-    public void given3NumbersWhenDeletingLastAmongThemShouldPassLinkedListResult(){
+    public void given3NumbersWhenSearchingAmongThemShouldPassLinkedListResult(){
          MyNode<Integer> myFirstNode = new MyNode<Integer>(56);
          MyNode<Integer> mySecondNode = new MyNode<Integer>(30);
          MyNode<Integer> myThirdNode = new MyNode<Integer>(70);
