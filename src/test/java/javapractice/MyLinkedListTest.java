@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Test;
 
 public class MyLinkedListTest {
     @Test
-    public void given3NumbersWhenDeletingFirstAmongThemShouldPassLinkedListResult(){
+    public void given3NumbersWhenDeletingLastAmongThemShouldPassLinkedListResult(){
          MyNode<Integer> myFirstNode = new MyNode<Integer>(56);
          MyNode<Integer> mySecondNode = new MyNode<Integer>(30);
          MyNode<Integer> myThirdNode = new MyNode<Integer>(70);
@@ -13,11 +13,11 @@ public class MyLinkedListTest {
          myLinkedList.add(myFirstNode);
          myLinkedList.append(myThirdNode);
          myLinkedList.insert(myFirstNode,mySecondNode);
-         myLinkedList.pop(myFirstNode);
+         myLinkedList.popLast(myThirdNode);
          myLinkedList.printMyNode();
-         boolean result = //myLinkedList.head.equals(myFirstNode) &&
-                          myLinkedList.head.equals(mySecondNode);
-                          myLinkedList.tail.equals(myThirdNode);
+         boolean result = myLinkedList.head.equals(myFirstNode);
+                          myLinkedList.tail.equals(mySecondNode);
+                          //myLinkedList.tail.equals(myThirdNode);
          Assertions.assertTrue(result);
     }
 
