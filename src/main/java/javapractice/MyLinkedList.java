@@ -41,7 +41,7 @@ public class MyLinkedList {
         newNode.setNext(tempNode);
     }
 
-    public INode pop(INode newNode) {
+    public INode pop() {
         INode tempNode = this.head;
         this.head = head.getNext();
         return tempNode;
@@ -92,22 +92,23 @@ public class MyLinkedList {
     public int getSize() {
         INode tempNode = head;
         int count = 0;
-        while (tempNode != null){
+        while (tempNode != null) {
             count++;
             tempNode = tempNode.getNext();
         }
         return count;
     }
 
-    public  void printMyNode() {
+    public void printMyNode() {
         StringBuffer myNodes = new StringBuffer("My Nodes: ");
         INode tempNode = head;
         while (tempNode.getNext() != null) {
             myNodes.append(tempNode.getKey());
-            if(!tempNode.equals(tail)) myNodes.append("->");
+            if (!tempNode.equals(tail)) myNodes.append("->");
             tempNode = tempNode.getNext();
         }
         myNodes.append(tempNode.getKey());
         System.out.println(myNodes);
     }
+
 }
