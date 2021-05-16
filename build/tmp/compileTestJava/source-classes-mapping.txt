@@ -1,2 +1,4 @@
 javapractice/MyLinkedListTest.java
  javapractice.MyLinkedListTest
+javapractice/MyStackTest.java
+ javapractice.MyStackTest

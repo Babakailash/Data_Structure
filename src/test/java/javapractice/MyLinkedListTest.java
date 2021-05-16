@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Test;
 
 public class MyLinkedListTest {
     @Test
-    public void given4NumbersWhenDeleteSecondLastPassLinkedListResult(){
+    public void given4NumbersWhenSortedAscendingOrderPassLinkedListResult(){
          MyNode<Integer> myFirstNode = new MyNode<Integer>(56);
          MyNode<Integer> mySecondNode = new MyNode<Integer>(30);
          MyNode<Integer> myThirdNode = new MyNode<Integer>(40);
@@ -15,9 +15,8 @@ public class MyLinkedListTest {
          myLinkedList.append(mySecondNode);
          myLinkedList.append(myThirdNode);
          myLinkedList.append(myFourthNode);
-         myLinkedList.popIn(myThirdNode);
          System.out.println("Size of LinkedList: "+myLinkedList.getSize());
-         //myLinkedList.insertAfter(mySecondNode,myThirdNode);
+        // myLinkedList.sortList();
          myLinkedList.printMyNode();
 
          boolean result = myLinkedList.head.equals(myFirstNode)&&
