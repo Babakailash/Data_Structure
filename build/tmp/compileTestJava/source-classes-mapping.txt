@@ -6,3 +6,5 @@ javapractice/MyLinkedListTest.java
  javapractice.MyLinkedListTest
 javapractice/MyHashMapTest.java
  javapractice.MyHashMapTest
+javapractice/MyLinkedHashMapTest.java
+ javapractice.MyLinkedHashMapTest
