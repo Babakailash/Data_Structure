@@ -22,7 +22,8 @@ public class MyLinkedList {
         }
     }
 
-    public void append(INode newNode) {
+    public INode append(INode newNode) {
+      //  INode newNode = null;
         if (this.head == null) {
             this.head = newNode;
         }
@@ -33,6 +34,7 @@ public class MyLinkedList {
             this.tail = newNode;
             tempNode.setNext(newNode);
         }
+        return newNode;
     }
 
     public void insert(INode myNode, INode newNode) {
@@ -78,15 +80,17 @@ public class MyLinkedList {
         }
     }
 
-    public void popIn(INode key) {
+    public INode remove() {
         INode tempNode = head;
         INode myNode = null;
+        INode key = null;
         while (tempNode.getNext() != key && tempNode != null) {
             myNode = tempNode;
             tempNode = tempNode.getNext();
         }
         tempNode = tempNode.getNext();
         myNode.setNext(tempNode);
+        return tempNode;
     }
 
     public int getSize() {

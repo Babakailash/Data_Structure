@@ -6,3 +6,5 @@ javapractice/MyLinkedList.java
  javapractice.MyLinkedList
 javapractice/MyStack.java
  javapractice.MyStack
+javapractice/MyQueue.java
+ javapractice.MyQueue

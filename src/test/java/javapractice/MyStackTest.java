@@ -19,7 +19,7 @@ public class MyStackTest {
     }
 
     @Test
-    public void given3NumbersInStackWhenPopedShouldMatchWithLastAddedNode() {
+    public void given3NumbersInStackWhenPopedShouldWithLastAddedNode() {
         MyNode<Integer> myFirstNode = new MyNode<>(70);
         MyNode<Integer> mySecondNode =new MyNode<>(30);
         MyNode<Integer> myThirdNode = new MyNode<>(56);

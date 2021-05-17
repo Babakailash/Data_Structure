@@ -12,9 +12,9 @@ public class MyLinkedListTest {
          MyNode<Integer> myFourthNode = new MyNode<Integer>(70);
          MyLinkedList myLinkedList = new MyLinkedList();
          myLinkedList.add(myFirstNode);
+         myLinkedList.append(myFirstNode);
          myLinkedList.append(mySecondNode);
          myLinkedList.append(myThirdNode);
-         myLinkedList.append(myFourthNode);
          System.out.println("Size of LinkedList: "+myLinkedList.getSize());
         // myLinkedList.sortList();
          myLinkedList.printMyNode();
