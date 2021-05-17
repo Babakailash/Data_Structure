@@ -10,21 +10,19 @@ public class MyLinkedListTest {
          MyNode<Integer> mySecondNode = new MyNode<Integer>(30);
          MyNode<Integer> myThirdNode = new MyNode<Integer>(40);
          MyNode<Integer> myFourthNode = new MyNode<Integer>(70);
-         MyLinkedList myLinkedList = new MyLinkedList();
-         myLinkedList.add(myFirstNode);
-         myLinkedList.append(myFirstNode);
-         myLinkedList.append(mySecondNode);
-         myLinkedList.append(myThirdNode);
+         MyLinkedList<Integer> myLinkedList = new MyLinkedList<Integer>();
+         myLinkedList.sortedLinkedList(myFirstNode);
+         myLinkedList.sortedLinkedList(mySecondNode);
+         myLinkedList.sortedLinkedList(myThirdNode);
+         myLinkedList.sortedLinkedList(myFourthNode);
          System.out.println("Size of LinkedList: "+myLinkedList.getSize());
-        // myLinkedList.sortList();
+       //  myLinkedList.sortedLinkedList();
          myLinkedList.printMyNode();
 
-         boolean result = myLinkedList.head.equals(myFirstNode)&&
-                          myLinkedList.head.getNext().equals(mySecondNode) &&
-                          myLinkedList.head.getNext().equals(myThirdNode)&&
+         boolean result = myLinkedList.head.getNext().equals(myThirdNode) &&
                           myLinkedList.tail.equals(myFourthNode);
 
-         Assertions.assertFalse(result);
+         Assertions.assertEquals(result,true);
     }
 
 }

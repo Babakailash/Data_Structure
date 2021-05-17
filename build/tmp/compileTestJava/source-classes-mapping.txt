@@ -1,6 +1,6 @@
-javapractice/MyStackTest.java
- javapractice.MyStackTest
-javapractice/MyLinkedListTest.java
- javapractice.MyLinkedListTest
 javapractice/MyQueueTest.java
  javapractice.MyQueueTest
+javapractice/MyLinkedListTest.java
+ javapractice.MyLinkedListTest
+javapractice/MyStackTest.java
+ javapractice.MyStackTest

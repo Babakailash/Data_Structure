@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="javapractice.MyLinkedListTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-05-17T11:18:03" hostname="DESKTOP-N6M0MS9" time="0.052">
+  <properties/>
+  <testcase name="given4NumbersWhenSortedAscendingOrderPassLinkedListResult()" classname="javapractice.MyLinkedListTest" time="0.052"/>
+  <system-out><![CDATA[Size of LinkedList: 4
+My Nodes: 30->40->56->70
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
