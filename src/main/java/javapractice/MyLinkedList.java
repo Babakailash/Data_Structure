@@ -59,17 +59,27 @@ public class MyLinkedList<K extends Comparable<K>> {
         return tempNode;
     }
 
-    public boolean search(INode key) {
-        INode tempNode = head;
-        while (tempNode != null && tempNode.getNext() != null) {
-            if (tempNode.getKey().equals(key.getKey())) {
-                System.out.println("Result Search " + key.getKey());
-                return true;
+    public void search(INode myNode) {
+        INode<K> tempNode = head;
+        while (tempNode != myNode && tempNode.getNext() != myNode) {
+            tempNode = tempNode.getNext();
             }
             tempNode = tempNode.getNext();
+        System.out.println("Serched element = " +tempNode.getKey());
         }
-        return false;
+
+    public INode<K> searchKey(K key) {
+        INode<K> tempNode = head;
+        while (tempNode != null && tempNode.getNext() != null){
+            if(tempNode.getKey().equals((K) key)){
+                return tempNode;
+            }
+
+            tempNode = tempNode.getNext();
+        }
+        return null;
     }
+
 
     public void insertAfter(INode myNode, INode newNode) {
         INode tempNode = head;
@@ -121,6 +131,14 @@ public class MyLinkedList<K extends Comparable<K>> {
             this.tail=tempNode;
             tempNode=tempNode.getNext();
         }
+    }
+    public void printMyNodes() {
+        System.out.println("My Nodes: " + head);
+    }
+
+    @Override
+    public String toString() {
+        return "MyLinkedListNodes{" + head + '}';
     }
 
     public void printMyNode() {
