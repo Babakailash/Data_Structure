@@ -90,7 +90,7 @@ public class MyLinkedList<K extends Comparable<K>> {
         }
     }
 
-    public INode remove() {
+    public INode remove(K temNode) {
         INode tempNode = head;
         INode myNode = null;
         INode key = null;
@@ -132,7 +132,13 @@ public class MyLinkedList<K extends Comparable<K>> {
             tempNode=tempNode.getNext();
         }
     }
-    public void printMyNodes() {
+
+
+    public <V> void pop(MyMapNode<K, V> myMapNode) {
+
+    }
+
+        public void printMyNodes() {
         System.out.println("My Nodes: " + head);
     }
 

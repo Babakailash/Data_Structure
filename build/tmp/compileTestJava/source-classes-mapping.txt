@@ -1,3 +1,5 @@
+javapractice/MyLinkedHashMapTest.java
+ javapractice.MyLinkedHashMapTest
 javapractice/MyQueueTest.java
  javapractice.MyQueueTest
 javapractice/MyStackTest.java
@@ -6,5 +8,3 @@ javapractice/MyLinkedListTest.java
  javapractice.MyLinkedListTest
 javapractice/MyHashMapTest.java
  javapractice.MyHashMapTest
-javapractice/MyLinkedHashMapTest.java
- javapractice.MyLinkedHashMapTest

@@ -11,14 +11,15 @@ public class MyLinkedHashMap<K extends Comparable<K>,V> {
         this.numBuckets = 10;
         this.myBucketArray = new ArrayList<>(numBuckets);
         //create empty LinkedLists
-        for (int i=0; i< numBuckets; i++)
+        for (int i = 0; i < numBuckets; i++)
             this.myBucketArray.add(null);
     }
-// This implements hash function to find index for a key
+
+    // This implements hash function to find index for a key
     private int getBucketIndex(K key) {
         int hashCode = Math.abs(key.hashCode());
         int index = hashCode % numBuckets;
-        System.out.println("Key: "+key+" hashcode: "+hashCode+" index: "+index);
+        System.out.println("Key: " + key + " hashcode: " + hashCode + " index: " + index);
         return index;
     }
 
@@ -33,11 +34,11 @@ public class MyLinkedHashMap<K extends Comparable<K>,V> {
     public void add(K key, V value) {
         int index = this.getBucketIndex(key);
         MyLinkedList<K> myLinkedList = this.myBucketArray.get(index);
-        if(myLinkedList == null) {
+        if (myLinkedList == null) {
             myLinkedList = new MyLinkedList<>();
-            this.myBucketArray.set(index,myLinkedList);
+            this.myBucketArray.set(index, myLinkedList);
         }
-        MyMapNode<K,V> myMapNode = (MyMapNode<K, V>) myLinkedList.searchKey(key);
+        MyMapNode<K, V> myMapNode = (MyMapNode<K, V>) myLinkedList.searchKey(key);
         if (myMapNode == null) {
             myMapNode = new MyMapNode<>(key, value);
             myLinkedList.append(myMapNode);
@@ -46,7 +47,23 @@ public class MyLinkedHashMap<K extends Comparable<K>,V> {
         }
     }
 
-    @Override
-    public String toString() {return "MyLinkedHashMap List{" + myBucketArray + "}";}
+    public V remove(K key ) {
+        int index = this.getBucketIndex(key);
+        MyLinkedList<K> myLinkedList = this.myBucketArray.get(index);
+        MyMapNode<K, V> myMapNode = (MyMapNode<K, V>) myLinkedList.searchKey(key);
+        if (myMapNode != null) {
+            V removedValue = (V) myMapNode.getValue();
+            myLinkedList.remove((K) key);
+            return removedValue;
+        } else {
+            return null;
+        }
+    }
+
+        @Override
+        public String toString () {
+            return "MyLinkedHashMap List{" + myBucketArray + "}";
+        }
 
 }
+

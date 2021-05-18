@@ -34,4 +34,5 @@
 .Key: avoidable hashcode: 1201140657 index: 7
 /Key: situations hashcode: 2020271669 index: 9
 /Key: situations hashcode: 2020271669 index: 9
--Key: paranoid hashcode: 1171464828 index: 8
+.Key: avoidable hashcode: 1201140657 index: 7
+¾MyLinkedHashMap List{[MyLinkedListNodes{MyMapNode{K=themselves V=1}}, MyLinkedListNodes{MyMapNode{K=but V=1}->MyMapNode{K=keep V=1}}, MyLinkedListNodes{MyMapNode{K=are V=2}->MyMapNode{K=they V=1}->MyMapNode{K=they V=1}->MyMapNode{K=into V=1}}, null, null, MyLinkedListNodes{MyMapNode{K=paranoids V=1}->MyMapNode{K=putting V=1}}, MyLinkedListNodes{MyMapNode{K=deliberately V=1}}, MyLinkedListNodes{MyMapNode{K=avoidable V=1}}, MyLinkedListNodes{MyMapNode{K=paranoid V=3}->MyMapNode{K=because V=1}->MyMapNode{K=because V=1}}, MyLinkedListNodes{MyMapNode{K=situations V=1}}]}

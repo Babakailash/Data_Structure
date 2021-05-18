@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="javapractice.MyLinkedHashMapTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-05-17T18:35:58" hostname="DESKTOP-N6M0MS9" time="0.105">
+<testsuite name="javapractice.MyLinkedHashMapTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-05-18T13:10:38" hostname="DESKTOP-N6M0MS9" time="0.206">
   <properties/>
-  <testcase name="givenASentence_WhenWordsAreAddedToList_ShouldReturnWordFrequency()" classname="javapractice.MyLinkedHashMapTest" time="0.105"/>
+  <testcase name="givenASentence_WhenWordsAreDeletedToList_ShouldReturnWordFrequency()" classname="javapractice.MyLinkedHashMapTest" time="0.206"/>
   <system-out><![CDATA[Key: paranoids hashcode: 1955671415 index: 5
 Key: paranoids hashcode: 1955671415 index: 5
 Key: are hashcode: 96852 index: 2
@@ -38,7 +38,8 @@ Key: avoidable hashcode: 1201140657 index: 7
 Key: avoidable hashcode: 1201140657 index: 7
 Key: situations hashcode: 2020271669 index: 9
 Key: situations hashcode: 2020271669 index: 9
-Key: paranoid hashcode: 1171464828 index: 8
+Key: avoidable hashcode: 1201140657 index: 7
+MyLinkedHashMap List{[MyLinkedListNodes{MyMapNode{K=themselves V=1}}, MyLinkedListNodes{MyMapNode{K=but V=1}->MyMapNode{K=keep V=1}}, MyLinkedListNodes{MyMapNode{K=are V=2}->MyMapNode{K=they V=1}->MyMapNode{K=they V=1}->MyMapNode{K=into V=1}}, null, null, MyLinkedListNodes{MyMapNode{K=paranoids V=1}->MyMapNode{K=putting V=1}}, MyLinkedListNodes{MyMapNode{K=deliberately V=1}}, MyLinkedListNodes{MyMapNode{K=avoidable V=1}}, MyLinkedListNodes{MyMapNode{K=paranoid V=3}->MyMapNode{K=because V=1}->MyMapNode{K=because V=1}}, MyLinkedListNodes{MyMapNode{K=situations V=1}}]}
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

@@ -1,3 +1,5 @@
+javapractice/MyLinkedHashMap.java
+ javapractice.MyLinkedHashMap
 javapractice/MyLinkedList.java
  javapractice.MyLinkedList
 javapractice/MyQueue.java
@@ -12,5 +14,3 @@ javapractice/MyStack.java
  javapractice.MyStack
 javapractice/MyHashMap.java
  javapractice.MyHashMap
-javapractice/MyLinkedHashMap.java
- javapractice.MyLinkedHashMap
