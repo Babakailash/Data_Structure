@@ -30,6 +30,26 @@ public class BST <K extends Comparable<K>> {
         return (current) == null ? 0 : 1 + this.getSizeRecursive(current.left) + this.getSizeRecursive(current.right);
     }
 
+    public boolean search(K key) {
+        return searchRecursive(root,key);
+    }
+
+    private boolean searchRecursive(MyBinaryNode<K> current, K key) {
+
+        if (current == null) {
+            return false;
+        }
+        if (key == current.key) {
+            System.out.println("KeyFound " + key);
+            return true;
+        }
+        int compareResult = key.compareTo(current.key);
+        return compareResult < 0
+                ? searchRecursive(current.left, key)
+                : searchRecursive(current.right, key);
+    }
+
+
 
     public void printMyBinaryNode() {
         StringBuffer myBinaryNode = new StringBuffer("My Nodes: ");

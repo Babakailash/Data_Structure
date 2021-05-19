@@ -1,19 +1,19 @@
-javapractice/INode.java
- javapractice.INode
-javapractice/MyNode.java
- javapractice.MyNode
-javapractice/MyStack.java
- javapractice.MyStack
-javapractice/MyQueue.java
- javapractice.MyQueue
-javapractice/MyBinaryNode.java
- javapractice.MyBinaryNode
 javapractice/MyLinkedHashMap.java
  javapractice.MyLinkedHashMap
 javapractice/MyLinkedList.java
  javapractice.MyLinkedList
+javapractice/MyQueue.java
+ javapractice.MyQueue
+javapractice/INode.java
+ javapractice.INode
+javapractice/MyBinaryNode.java
+ javapractice.MyBinaryNode
+javapractice/MyNode.java
+ javapractice.MyNode
 javapractice/MyMapNode.java
  javapractice.MyMapNode
+javapractice/MyStack.java
+ javapractice.MyStack
 javapractice/MyHashMap.java
  javapractice.MyHashMap
 javapractice/BST.java
