@@ -135,9 +135,7 @@ public class MyLinkedList<K extends Comparable<K>> {
 
 
     public <V> void pop(MyMapNode<K, V> myMapNode) {
-
     }
-
         public void printMyNodes() {
         System.out.println("My Nodes: " + head);
     }

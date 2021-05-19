@@ -20,6 +20,10 @@ public MyMapNode(K key, V value) {
     this.key = key;
     }
 
+    public V getValue() { return this.value; }
+
+    public void setValue(V value) { this.value = value; }
+
     @Override
     public INode<K> getNext() {
         return next;
@@ -30,9 +34,6 @@ public MyMapNode(K key, V value) {
     this.next =(MyMapNode<K, V>) next;
     }
 
-    public V getValue() { return this.value; }
-
-    public void setValue(V value) { this.value = value; }
 
     @Override
     public String toString() {

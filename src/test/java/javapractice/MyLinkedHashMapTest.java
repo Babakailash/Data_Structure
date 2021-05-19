@@ -39,7 +39,7 @@ public class MyLinkedHashMapTest {
         }
         Integer frequency = myLinkedHashMap.remove("avoidable");
         System.out.println(myLinkedHashMap);
-        Assertions.assertEquals((Integer) null,frequency);
+        Assertions.assertEquals( null,frequency);
     }
 }
 

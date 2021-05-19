@@ -21,16 +21,6 @@ public class MyHashMap<K extends Comparable <K>, V> {
             myMapNode.setValue(value);
         }
     }
-    public void remove( V value){
-        K key = null;
-        MyMapNode<K,V> myMapNode = (MyMapNode<K, V>) this.myLinkedList.searchKey(key);
-        if (myMapNode == null) {
-            myMapNode = new MyMapNode<>(key, value);
-            this.myLinkedList.pop(myMapNode);
-        } else {
-            myMapNode.setValue(value);
-        }
-    }
 
     @Override
     public String toString() {
